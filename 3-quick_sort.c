@@ -72,3 +72,17 @@ int partition(int *array, int low, int hight)
 	}
 	return (i + 1);
 }
+/**
+ * swap - A function that swat two position
+ * of an element in Array
+ * @a: The pointer to the fisrt element to check fo swaping
+ * @b: The element to swap with a
+ * Return: 0
+ */
+
+void swap(int *a, int *b)
+{
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}

@@ -1,6 +1,7 @@
 #include "sort.h"
 #include <stdio.h>
 void print_array(const int *array, size_t size);
+void swap(int *a, int *b);
 
 /**
  * bubble_sort - A function that sorts an array of integers
@@ -28,4 +29,19 @@ void bubble_sort(int *array, size_t size)
 			}
 		}
 	}
+}
+
+/**
+ * swap - A function that swat two position
+ * of an element in Array
+ * @a: The pointer to the fisrt element to check fo swaping
+ * @b: The element to swap with a
+ * Return: 0
+ */
+
+void swap(int *a, int *b)
+{
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
